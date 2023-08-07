@@ -15,7 +15,7 @@ export default function Cart() {
       <h1 >Your Cart Data</h1>
       <hr className="w-75"/>
       <br/>
-      <AllotmentBookCards books={books}/>
+       {  books ? <AllotmentBookCards books={books}/> :null}
       </Container>
     </>
   );

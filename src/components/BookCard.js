@@ -15,6 +15,7 @@ export default function BookCard(props) {
       <Container>
         <Row>
           {books.map((item, index) => (
+            
             <Col md={4} id ={index}>
               <Card  style={{ height: "13rem" }}>
                 <Card.Body>
@@ -23,19 +24,15 @@ export default function BookCard(props) {
                     Price : &#8377;  {item.bookPrice}
                   </Card.Subtitle>
                   <Card.Text>Description : {item.bookDescription}</Card.Text>
-                 
-                  <Button variant="contained" size="small" color="secondary" endIcon={<ShoppingBag/>}> Buy Now</Button>
-                  
                   <Button variant="contained" size="small" color="secondary" endIcon={<ShoppingCart/> }
                   onClick={()=>{dispatch(addProduct(item))}} className="mx-2"> Add To Cart </Button>
-                </Card.Body>
-                 
+                </Card.Body>                
               </Card>
-              
             </Col>
           ))}
-        </Row>
-      </Container>
+
+          
+        </Row>      </Container>
     </>
   );
 }

@@ -22,7 +22,7 @@ const navigate = useNavigate();
     })
     .then((res)=>{       
         sessionStorage.setItem("token",res.data)
-        navigate("/books")
+        navigate("/students")
     })
     .catch((err)=>{
         console.log(err)

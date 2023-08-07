@@ -14,12 +14,11 @@ export default function Navigation ()
     return(<>
     <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Book Mania</Navbar.Brand>
+          <Navbar.Brand >Book Mania</Navbar.Brand>
           <Nav className="me-auto">
             <Link to="/" className='nav-link'>Home</Link>
-            <Link to="/Cart" className='nav-link'>Your Cart</Link>
-            <Link to="/Cart" className='nav-link'>Rented Books</Link>
-            <Link to="/books" className='nav-link'>Allot Book</Link>
+            <Link to="/rentalbooks" className='nav-link'>Rented Books</Link>
+            <Link to="/students" className='nav-link'>Allot Book</Link>
           </Nav>
           <IconButton  size="large" onClick={()=>{navigate("/cart")}}>
             <Badge badgeContent={count} color="error">

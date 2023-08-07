@@ -28,3 +28,48 @@ margin: auto;
 .cart-icon-color{
     color: white;
 }
+
+.search-student-result{
+    /* padding: 30px; */
+    margin-top: 100px;
+}
+
+.student-searchbox{
+    display: inline-block !important;
+    width: 60% !important;
+}
+
+.home-nav-col{
+    padding: 20px;
+    /* border: 0.5px solid rgb(167, 167, 167); */
+    border-radius: 10px;
+    width: 22% !important;
+    margin-right: 10px;
+    height: 200px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.103);
+    background-color: white;
+   
+}
+
+.home-nav-row{
+    margin: 10px;
+}
+
+.home-nav-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.home-nav-icon{
+    font-size: 65px !important;
+    display: block !important;
+    margin: auto;
+  
+}
+
+.home-container{
+    background-image: url(/public/Images/wallpaper.jpg);
+    
+}
