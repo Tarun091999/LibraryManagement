@@ -36,8 +36,15 @@ export const BooksSlice = createSlice({
             })
           }
     },
+    removeProduct(state , action)
+    {
+      console.log(action.payload)
+      const bookId = action.payload
+      state.cartItems= state.cartItems.filter((item)=>
+      item.bookId!= bookId)
+    }
   },
 });
-export const { addProduct } = BooksSlice.actions;
+export const { addProduct, removeProduct } = BooksSlice.actions;
 
 export default BooksSlice.reducer;
